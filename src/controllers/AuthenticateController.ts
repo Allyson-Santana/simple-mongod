@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
+
 import { NextFunction, Request, Response } from 'express'
 import * as yup from 'yup'
 import { ApiError } from '../helpers/ApiError'

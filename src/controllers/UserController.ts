@@ -1,11 +1,11 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
+
 import { NextFunction, Request, Response } from 'express'
 import UserService from '../services/UserService'
 import * as yup from 'yup'
 import { ApiError } from '../helpers/ApiError'
 
 class UserController {
-  /* eslint-disable */ 
-
   public async index (req: Request, res: Response, next: NextFunction) {
     try {
       const allUsers = await UserService.index()
@@ -27,8 +27,6 @@ class UserController {
       next(error)
     }
   }
-
-  /* eslint-enable */
 
   public async store (req: Request, res: Response, next: NextFunction) {
     try {
